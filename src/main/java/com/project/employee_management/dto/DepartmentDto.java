@@ -3,6 +3,8 @@ package com.project.employee_management.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -10,6 +12,7 @@ public class DepartmentDto {
     private Long departmentId;
     private String departmentName;
     private String departmentDescription;
+    private List<EmployeeDto> employees;
 
 }
 //
